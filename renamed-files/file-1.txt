@@ -1,0 +1,8 @@
+## Soon-to-be Markdown File
+This file will be renamed into a Markdown file soon!
+
+To use ShellJS to rename this file to markdown file, execute:
+
+```javascript
+node index.js
+```
