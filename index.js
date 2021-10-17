@@ -29,11 +29,14 @@ function executeGit(commitMessage) {
         shell.exec('git add .', (stdout, stderr) => {
             console.log(stdout, stderr);
             //initiate a console prompt that requires user input in the console, then use the input to createa git commit message
-            rl.question('Enter your git commit message', (answer) => {
+            rl.question('Enter your git commit message:   ', (answer) => {
                 console.log(`Thank you for your valuable feedback: ${answer}`);
                 //add a commit message after the executing git add
                 shell.exec(`git commit -m "${answer}"`, (stdout, stderr) => {
                     console.log(stdout, stderr);
+                    shell.exec(`git push`, (stdout, stderr) => {
+                        console.log(stdout, stderr);
+                    })
                 })
                 rl.close();
             });
@@ -69,10 +72,13 @@ function bulkRenameFiles() {
     });
 }
 
-// bulkRenameFiles()
 printCurrentDirectory()
-
 executeGit()
+
+// TODO: remove the comment tag in bulkRenameFiles() to start bulk renaming the file
+// bulkRenameFiles()
+
+
 
 
 
