@@ -4,7 +4,9 @@
   "description": "a demo for a simple git deploy script using nodejs",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "newfile": "node newfile.js",
+    "rename": "node rename.js",
+    "git": "node git-workflow.js"
   },
   "author": "ian nguyen",
   "license": "ISC",
