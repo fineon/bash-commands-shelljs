@@ -4,5 +4,8 @@ This file will be renamed into a Markdown file soon!
 To use ShellJS to rename this file to markdown file, execute:
 
 ```javascript
+# if you are in the renamed-files directory, move up to the parent folder
+cd ..
+# execute the javascript file using Nodejs command
 node index.js
 ```
