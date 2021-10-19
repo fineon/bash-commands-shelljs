@@ -22,5 +22,7 @@ npm install
 
 3. Run the script using Node.js
 ```bash
-node index.js
+npm run newfile
+npm run rename
+npm run git
 ```

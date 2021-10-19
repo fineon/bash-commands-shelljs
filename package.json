@@ -4,7 +4,7 @@
   "description": "a demo for a simple git deploy script using nodejs",
   "main": "index.js",
   "scripts": {
-    "newfile": "node newfile.js",
+    "createfiles": "node create-files.js",
     "rename": "node rename.js",
     "git": "node git-workflow.js"
   },

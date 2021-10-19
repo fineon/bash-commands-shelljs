@@ -22,7 +22,7 @@ const readline = require('readline')
  */
 function bulkRenameFiles() {
     getFilesInDirectory().forEach((file, index) => {
-        let conseqName = 'markdown-file-' + index.toString() + '.md'
+        let conseqName = 'renamed-markdown-file-' + index.toString() + '.md'
         fs.rename(file, conseqName)
     });
 }
